@@ -1,0 +1,473 @@
+/* ------------------------------------------------------------------
+   NutriPocket · Fase 1 (interfaz y navegación)
+   Tokens extraídos de Figma (DISEÑO FINAL, hImwMJaLfAzXPt5KDV8Nox)
+   ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url('../fonts/Epilogue.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Barra de estado del diseño: Figma usa Inter para «10:30». */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --navy: #173b64;
+  --blue: #0167ef;
+  --surface: #faf9f6;
+  --light-blue: #bedaff;
+  --pale-blue: #9fc2e2;
+  --shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --kcal: #0167ef;
+  --protein: #ff7645;
+  --carbs: #2c9027;
+  --fat: #ffce60;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #dfe4ea;
+  font-family: 'Epilogue', 'Segoe UI', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#phone {
+  width: 420px;
+  height: 912px;
+  position: relative;
+  transform-origin: center center;
+  box-shadow: 0 18px 50px rgba(23, 59, 100, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+#viewport {
+  position: absolute;
+  inset: 0;
+}
+
+/* --------------------------- pantalla ---------------------------- */
+
+.screen {
+  position: absolute;
+  inset: 0;
+  width: 420px;
+  height: 912px;
+  overflow: hidden;
+  transition: opacity 0.32s ease-out;
+}
+
+.screen.fading {
+  /* La capa de entrada nunca puede quedar invisible ni bloquear la pantalla
+     si el navegador pausa las animaciones durante la carga. */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.screen.scrollable { overflow-y: auto; overflow-x: hidden; }
+
+/* Elementos posicionados con la geometría exacta de Figma */
+.el {
+  position: absolute;
+  pointer-events: none;
+}
+
+.el.hit {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.el.tx {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.el.tx .ln2 { color: var(--blue); }
+
+/* Días del calendario (paintCalendar): la geometría va en línea, pero la
+   clase base no es .el, así que aquí se fija el posicionamiento absoluto. */
+.cal-day { position: absolute; }
+
+img.asset {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Vectores embebidos (iconos de la barra de estado, chevrones). */
+.el > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.shadow { box-shadow: var(--shadow); }
+
+/* --------------------------- controles --------------------------- */
+
+.field-input {
+  position: absolute;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--navy);
+  background: var(--surface);
+  border: 1.5px solid var(--navy);
+  border-radius: 20px;
+  /* En Figma vivo los campos NO llevan sombra (solo la tienen los botones):
+     la caja del campo se limita al borde de 1.5 px. */
+  box-shadow: none;
+  padding: 0 12px;
+  outline: none;
+  pointer-events: auto;
+}
+
+/* Campo con sombra en el diseño (p03 nombre: DROP_SHADOW 4/4/0 25 %). */
+.field-input.shadowed { box-shadow: var(--shadow); }
+
+.field-input::placeholder { color: rgba(23, 59, 100, 0.45); font-weight: 400; }
+
+.field-input:focus { border-color: var(--blue); }
+
+.field-input.numeric {
+  width: 67px;
+  text-align: right;
+  font-weight: 600;
+  border-width: 1px;
+  box-shadow: none;
+}
+
+/* Campo numérico de P9.2: solo la línea base del diseño, sin caja. */
+.field-input.inline {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  color: rgba(23, 59, 100, 0.7);
+}
+
+/* Herramienta exclusiva de desarrollo: no se monta en el dashboard normal. */
+.progress-dev-panel {
+  position: absolute;
+  z-index: 20;
+  left: 18px;
+  top: 135px;
+  width: 384px;
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid var(--navy);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--navy);
+  font-family: Inter, sans-serif;
+  pointer-events: auto;
+}
+.progress-dev-panel h1 { margin: 0 0 8px; font-size: 20px; }
+.progress-dev-panel p { margin: 8px 0; font-size: 12px; line-height: 1.35; }
+.progress-dev-fields { display: grid; gap: 8px; }
+.progress-dev-fields label { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.progress-dev-fields input {
+  width: 90px;
+  box-sizing: border-box;
+  padding: 5px 7px;
+  border: 1px solid var(--navy);
+  border-radius: 8px;
+  font: inherit;
+}
+.progress-dev-panel button {
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--navy);
+  color: var(--surface);
+  cursor: pointer;
+}
+
+/* Estado deshabilitado: en el diseño no existe atenuación (los botones se
+   pintan siempre a pleno contraste); solo cambia el cursor. La validación
+   sigue actuando en el click (mensaje de aviso). */
+.el.disabled { cursor: not-allowed; }
+
+/* ---------------------------- ruedas ----------------------------- */
+
+.wheel {
+  position: absolute;
+  overflow: hidden;
+  touch-action: none;
+  pointer-events: auto;
+  cursor: ns-resize;
+}
+
+.wheel-rows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.wheel-column {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  outline: none;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: ns-resize;
+}
+
+/* Los glifos no deben convertirse en hit targets independientes: toda la
+   columna visible captura el pointerdown y permite iniciar el arrastre desde
+   cualquiera de sus tres filas. */
+.wheel-column .wheel-rows,
+.wheel-column .wheel-row,
+.wheel-column .wheel-digit {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.wheel.animate .wheel-rows { transition: transform 0.22s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.wheel-row { position: absolute; left: 0; width: 100%; }
+
+.wheel-digit {
+  position: absolute;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 90px;
+  color: var(--blue);
+}
+
+.wheel-lines {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.wheel-line {
+  position: absolute;
+  height: 2px;
+  background: var(--blue);
+}
+
+.wheel-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(250, 249, 246, 0.65);
+  pointer-events: none;
+}
+
+/* --------------------------- progreso ---------------------------- */
+
+.progress svg { display: block; width: 100%; height: 100%; }
+
+/* ---------------------------- barras ----------------------------- */
+
+.bar-track {
+  position: absolute;
+  border-radius: 5px;
+}
+
+.bar-fill {
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* ---------------------------- anillos ---------------------------- */
+
+.ring svg { display: block; width: 100%; height: 100%; }
+
+.week-goal-dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* --------------------------- tarjetas ---------------------------- */
+
+.card-option {
+  transition: background-color 0.18s ease-out, color 0.18s ease-out;
+}
+
+.card-option.selected { background: var(--navy); }
+
+.card-option.selected .tx { color: var(--surface); }
+
+/* --------------------------- chips ------------------------------- */
+
+.chip-hit { transition: background-color 0.18s ease-out, color 0.18s ease-out; }
+
+/* Selector segmentado de Figma: el contenedor exterior define el borde y los
+   dos segmentos extremos completan el redondeo sin crear tres rectángulos. */
+.chip-segmented-shell {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.chip-segment {
+  /* Los textos son hermanos DOM y se renderizan después del fondo. No crear
+     un stacking context aquí: un z-index positivo taparía las etiquetas. */
+  z-index: auto;
+}
+.chip-segment.chip-first { border-radius: 18px 0 0 18px; }
+.chip-segment.chip-last { border-radius: 0 18px 18px 0; }
+
+/* ------------------------- scrollers ----------------------------- */
+
+.scroller-x {
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: hidden;
+  pointer-events: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.scroller-x::-webkit-scrollbar { display: none; }
+
+.scroller-x .track { position: relative; height: 100%; }
+.scroller-x .rec-card {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.scroller-x.dragging { cursor: grabbing; user-select: none; }
+
+.rec-empty-state {
+  position: absolute;
+  left: 35px;
+  top: 470px;
+  width: 350px;
+  min-height: 96px;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--navy);
+  border-radius: 20px;
+  color: var(--navy);
+  background: var(--surface);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.rec-variant-description {
+  position: absolute;
+  left: 38px;
+  top: 320px;
+  width: 344px;
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16.4px;
+}
+.rec-variant-title {
+  position: absolute;
+  left: 10px;
+  width: 400px;
+  height: 25px;
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20.5px;
+}
+.rec-variant-card {
+  position: absolute;
+  width: 268px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--navy);
+  box-shadow: var(--shadow);
+}
+.rec-variant-image {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 236px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.rec-variant-info {
+  position: absolute;
+  left: 16px;
+  top: 182px;
+  width: 236px;
+  color: var(--light-blue);
+}
+.rec-variant-name { font-size: 18px; font-weight: 700; line-height: 18.4px; }
+.rec-variant-detail { margin-top: 8px; font-size: 15px; font-weight: 400; line-height: 15.4px; }
+
+/* --------------------------- sidebar ----------------------------- */
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 59, 100, 0.35);
+  pointer-events: auto;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.24s ease;
+}
+
+.scrim.open { opacity: 1; }
+
+.sidebar-panel {
+  transform: translateX(100%);
+  transition: transform 0.24s ease;
+  will-change: transform;
+}
+
+.sidebar-panel.open { transform: translateX(0); }
+
+.serial-connect {
+  position: absolute;
+  left: 22px;
+  top: 760px;
+  width: 201px;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid var(--surface);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--surface);
+  font: 600 13px/16px 'Epilogue', sans-serif;
+  cursor: pointer;
+}
+.serial-connect:hover { background: rgba(250, 249, 246, 0.12); }

@@ -1,0 +1,1747 @@
+{
+  "project": "NutriPocket",
+  "description": "Mobile web app — extracción de assets desde Figma (solo assets y documentación; sin implementación).",
+  "source": {
+    "figmaFileKey": "hImwMJaLfAzXPt5KDV8Nox",
+    "figmaFileName": "Nutripocket – Wireframes: Mi perfil nutricional",
+    "pageUsed": {
+      "name": "DISEÑO FINAL",
+      "nodeId": "204:4114"
+    },
+    "referencePages": [
+      {
+        "name": "Design system",
+        "nodeId": "42:4"
+      },
+      {
+        "name": "Árbol de navegación",
+        "nodeId": "6:385"
+      }
+    ],
+    "version": "2412543216915581559",
+    "deviceFrame": "iPhone Air — 420 × 912 px",
+    "backgroundSurface": "#FAF9F6"
+  },
+  "generatedAt": "2026-10-20",
+  "rootPath": "C:\\Users\\jesus\\Documents\\Nutripocket",
+  "counts": {
+    "screensIdentified": 20,
+    "screensActive": 19,
+    "screensExcluded": 1,
+    "images": 20,
+    "icons": 14,
+    "components": 14,
+    "videosExtracted": 0,
+    "totalAssetFiles": 68,
+    "missingAssets": 1,
+    "screensCustomOutsideFigma": 1,
+    "screensToImplement": 20
+  },
+  "designTokens": {
+    "paletteSwatches": [
+      {
+        "hex": "#123660",
+        "role": "Navy primario (swatch de paleta)"
+      },
+      {
+        "hex": "#0167EF",
+        "role": "Azul de marca / acento"
+      },
+      {
+        "hex": "#FFCE60",
+        "role": "Amarillo"
+      },
+      {
+        "hex": "#FF7645",
+        "role": "Naranja"
+      },
+      {
+        "hex": "#2C9027",
+        "role": "Verde"
+      },
+      {
+        "hex": "#D3DFE9",
+        "role": "Gris azulado claro / deshabilitado"
+      }
+    ],
+    "observedAppColors": [
+      {
+        "hex": "#FAF9F6",
+        "role": "Fondo de superficie de todas las pantallas (excepto Pantalla 1)"
+      },
+      {
+        "hex": "#173B64",
+        "role": "Navy usado en texto/encabezados/botones de los wireframes"
+      },
+      {
+        "hex": "#0167EF",
+        "role": "Fondo de Pantalla 1 y acentos"
+      }
+    ],
+    "colorNote": "RESUELTO (USER-CONFIRMED): color principal = #173B64. #123660 queda solo como swatch del Design System; no se usa en los componentes de pantalla. Referencia visual primaria = DISENO FINAL.",
+    "typography": {
+      "fontFamily": "Epilogue",
+      "styles": [
+        {
+          "role": "Títulos",
+          "style": "Epilogue / Bold",
+          "nodeId": "75:927"
+        },
+        {
+          "role": "Subtítulos",
+          "style": "Epilogue / Medium",
+          "nodeId": "75:928"
+        },
+        {
+          "role": "Texto",
+          "style": "Epilogue / Light",
+          "nodeId": "75:929"
+        }
+      ],
+      "note": "La API REST simplificada no devolvió los valores numéricos de fontSize/lineHeight (retorna null). Familia y peso confirmados; los tamaños en px deben leerse directamente del archivo Figma si se necesitan exactos."
+    },
+    "primaryColor": {
+      "hex": "#173B64",
+      "source": "USER-CONFIRMED",
+      "note": "Color principal confirmado por el usuario. Resuelve la discrepancia con #123660 de la paleta del Design System."
+    },
+    "presentation": {
+      "form": "aplicacion web de escritorio",
+      "layout": "conserva el diseno movil de Figma (iPhone Air 420x912) centrado en pantalla de escritorio",
+      "redesignForDesktop": false,
+      "source": "USER-CONFIRMED"
+    }
+  },
+  "screens": [
+    {
+      "order": 1,
+      "nodeId": "204:4115",
+      "figmaName": "Pantalla 1 - Pantalla de inicio",
+      "localPath": "assets/screens/screen-01-pantalla-inicio.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#0167EF",
+      "kind": "frame"
+    },
+    {
+      "order": 2,
+      "nodeId": "204:4118",
+      "figmaName": "Pantalla 2 - EMPEZAR · iPhone Air",
+      "localPath": "assets/screens/screen-02-empezar.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 3,
+      "nodeId": "204:5176",
+      "figmaName": "Pantalla 2.1 LOG IN · iPhone Air",
+      "localPath": "assets/screens/screen-02-1-login.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 4,
+      "nodeId": "257:2468",
+      "figmaName": "Pantalla 2.2 CREAR CUENTA",
+      "localPath": "assets/screens/screen-02-2-crear-cuenta.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 5,
+      "nodeId": "204:4123",
+      "figmaName": "Pantalla 3 - NOMBRE · iPhone Air",
+      "localPath": "assets/screens/screen-03-nombre.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 6,
+      "nodeId": "204:4209",
+      "figmaName": "Pantalla 4 - INTRODUCE TU EDAD · iPhone Air",
+      "localPath": "assets/screens/screen-04-edad.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 7,
+      "nodeId": "204:4379",
+      "figmaName": "Pantalla 5- INTRODUCE TU ESTATURA · iPhone Air",
+      "localPath": "assets/screens/screen-05-estatura.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 8,
+      "nodeId": "204:4294",
+      "figmaName": "Pantalla 6 - INTRODUCE TU PESO · iPhone Air",
+      "localPath": "assets/screens/screen-06-peso.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 9,
+      "nodeId": "204:4464",
+      "figmaName": "Pantalla 7¿CUÁNTO EJERCICIO HACES? · iPhone Air",
+      "localPath": "assets/screens/screen-07-ejercicio.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 10,
+      "nodeId": "257:2122",
+      "figmaName": "Pantalla 8 ¿CUÁNTO EJERCICIO HACES? · iPhone Air",
+      "localPath": "assets/screens/screen-08-tipo-ejercicio.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 11,
+      "nodeId": "204:4561",
+      "figmaName": "Pantalla 9 - DEFINIR MACROS · iPhone Air",
+      "localPath": "assets/screens/screen-09-definir-macros.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 12,
+      "nodeId": "204:4658",
+      "figmaName": "Pantalla 9.1 Metas sugeridas · iPhone Air",
+      "localPath": "assets/screens/screen-09-1-metas-sugeridas.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 13,
+      "nodeId": "204:4761",
+      "figmaName": "Pantalla 9.2 · iPhone Air",
+      "localPath": "assets/screens/screen-09-2-macros-manual.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 14,
+      "nodeId": "484:17956",
+      "figmaName": "Pantalla 10 Pantalla de carga",
+      "localPath": "assets/screens/screen-10-carga.png",
+      "width": 420,
+      "height": 912,
+      "bg": "IMAGE fill (poster)",
+      "kind": "frame",
+      "note": "Contenía material de carga; la API expone solo un IMAGE fill estático (sin videoRef). Ver assets/videos/README.md."
+    },
+    {
+      "order": 15,
+      "nodeId": "204:4874",
+      "figmaName": "Pantalla 11 PANEL PRINCIPAL · iPhone Air",
+      "localPath": "assets/screens/screen-11-panel-principal.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 16,
+      "nodeId": "204:4935",
+      "figmaName": "Historial del dia · iPhone Air",
+      "localPath": "assets/screens/screen-historial-dia.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame"
+    },
+    {
+      "order": 17,
+      "nodeId": "345:9838",
+      "figmaName": "Component 4 (Historial de la semana)",
+      "localPath": "assets/screens/screen-historial-semana.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "instance",
+      "mainComponent": "345:9293 — Tarjetas semanales"
+    },
+    {
+      "order": 18,
+      "nodeId": "264:4687",
+      "figmaName": "Historial de la mes · iPhone Air",
+      "localPath": "assets/screens/screen-historial-mes.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "frame",
+      "status": "EXCLUDED",
+      "excludeReason": "Marcada EXCLUIDA por decisión del usuario. NO usar en la aplicación final. El nodo original en Figma y el asset descargado se conservan intactos. Auditoría: tiene 0 interacciones y ningún transitionNodeID de DISEÑO FINAL apunta a ella (es huérfana en el prototipo); el selector 'Mensual' conduce a 466:15391 (calendario), no a esta pantalla."
+    },
+    {
+      "order": 19,
+      "nodeId": "466:15391",
+      "figmaName": "Component 12 (Historial del mes – calendario)",
+      "localPath": "assets/screens/screen-historial-mes-calendario.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "instance",
+      "mainComponent": "466:15376 — Tarjetas mensuales"
+    },
+    {
+      "order": 20,
+      "nodeId": "345:7234",
+      "figmaName": "Pantalla recomendaciones",
+      "localPath": "assets/screens/screen-recomendaciones.png",
+      "width": 420,
+      "height": 912,
+      "bg": "#FAF9F6",
+      "kind": "instance",
+      "mainComponent": "345:6237 — Recomendaciones tarjetas",
+      "note": "VERTICAL_SCROLLING"
+    }
+  ],
+  "images": [
+    {
+      "nodeId": "204:4117",
+      "name": "Mascota (raster, Pantalla 1)",
+      "imageRef": "83ee3bc2ce23de3508471ef70734774f7eeb4505",
+      "format": "png",
+      "localPath": "assets/images/img-mascot.png"
+    },
+    {
+      "nodeId": "204:4208",
+      "name": "Logotipo NutriPocket (wordmark)",
+      "imageRef": "172ce6e8f67e1ec3b46cec6a838c0c2efc9358a9",
+      "format": "png",
+      "localPath": "assets/images/img-wordmark.png"
+    },
+    {
+      "nodeId": "204:5177",
+      "name": "NutriPocket Title (lockup, Log In)",
+      "imageRef": "946545d7c46d8d07053fbc253fd421caa32ff21e",
+      "format": "png",
+      "localPath": "assets/images/img-title-lockup.png"
+    },
+    {
+      "nodeId": "484:17956",
+      "name": "Póster pantalla de carga",
+      "imageRef": "9e6524e700cdc28b1a82cd36d0798c776dfa3b74",
+      "format": "png",
+      "localPath": "assets/images/img-loading-poster.png",
+      "note": "Fill IMAGE del frame; no es un video extraíble."
+    },
+    {
+      "nodeId": "204:5557",
+      "name": "Fotografía · Pollo a la plancha",
+      "imageRef": "5629ccc34acdaf600d2a2493f004a4a863e5af55",
+      "format": "png",
+      "localPath": "assets/images/food-pollo-plancha.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5563",
+      "name": "Fotografía · Pechuga de pavo",
+      "imageRef": "f258c733015c97770b229164c97f727f3a37457f",
+      "format": "png",
+      "localPath": "assets/images/food-pechuga-pavo.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5567",
+      "name": "Fotografía · Lomo de cerdo",
+      "imageRef": "9eca96c8d42c71cfc454ef78470a11fb82a3dfd9",
+      "format": "png",
+      "localPath": "assets/images/food-lomo-cerdo.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5571",
+      "name": "Fotografía · Carne de res magra",
+      "imageRef": "bed8749dd323f9deab1fe5ab6241e25105a01f39",
+      "format": "png",
+      "localPath": "assets/images/food-carne-res-magra.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5575",
+      "name": "Fotografía · Carne molida de res",
+      "imageRef": "11fc52a7973002e278b82468290b094033420a78",
+      "format": "png",
+      "localPath": "assets/images/food-carne-molida.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5580",
+      "name": "Fotografía · Huevo",
+      "imageRef": "050ce08a9a682a298d4d7fab5637bb7f8c4f3dff",
+      "format": "png",
+      "localPath": "assets/images/food-huevo.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5535",
+      "name": "Fotografía · Salmón",
+      "imageRef": "00db64bfaed78bc5173020601b24c4bde45e5067",
+      "format": "png",
+      "localPath": "assets/images/food-salmon.png",
+      "macro": "Proteína / Grasas"
+    },
+    {
+      "nodeId": "204:5544",
+      "name": "Fotografía · Pescado blanco",
+      "imageRef": "c37f835e1ee9caf2916fd2d5fff625e287a4c5c0",
+      "format": "png",
+      "localPath": "assets/images/food-pescado-blanco.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5540",
+      "name": "Fotografía · Camarones",
+      "imageRef": "9239038b54c7b3607f9b8a993b130729ea19dbf3",
+      "format": "png",
+      "localPath": "assets/images/food-camarones.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5548",
+      "name": "Fotografía · Atún",
+      "imageRef": "232c44a116aea5c27d6d1e6fbd12e1120d7f2281",
+      "format": "png",
+      "localPath": "assets/images/food-atun.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5520",
+      "name": "Fotografía · Tofu firme",
+      "imageRef": "7e0b46f7072372beeb2fda4b9045038ec413a9e3",
+      "format": "png",
+      "localPath": "assets/images/food-tofu.png",
+      "macro": "Proteína vegetal"
+    },
+    {
+      "nodeId": "204:5524",
+      "name": "Fotografía · Lentejas cocidas",
+      "imageRef": "e4d2f78daf3942f52fcd7015ce7ef54b9ee577c9",
+      "format": "png",
+      "localPath": "assets/images/food-lentejas.png",
+      "macro": "Carbohidrato / Proteína vegetal"
+    },
+    {
+      "nodeId": "204:5529",
+      "name": "Fotografía · Garbanzos y frijoles",
+      "imageRef": "d1de60842e4268d032a514f0e9daa37df820c70c",
+      "format": "png",
+      "localPath": "assets/images/food-garbanzos-frijoles.png",
+      "macro": "Carbohidrato / Proteína vegetal"
+    },
+    {
+      "nodeId": "204:5513",
+      "name": "Fotografía · Proteína whey",
+      "imageRef": "c84f7bfa227d88ee4de4fec1fe4d427a2579d346",
+      "format": "png",
+      "localPath": "assets/images/food-proteina-whey.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5505",
+      "name": "Fotografía · Yogur griego natural",
+      "imageRef": "9da7b4845a7fa2595e56d44156cbdb7f9e4b8c6c",
+      "format": "png",
+      "localPath": "assets/images/food-yogur-griego.png",
+      "macro": "Proteína"
+    },
+    {
+      "nodeId": "204:5509",
+      "name": "Fotografía · Queso cottage",
+      "imageRef": "96b1d3d620d4950a3a17834e12c679d85d67bd69",
+      "format": "png",
+      "localPath": "assets/images/food-queso-cottage.png",
+      "macro": "Proteína"
+    }
+  ],
+  "icons": [
+    {
+      "nodeId": "131:950",
+      "name": "ICONO USUARIO (avatar)",
+      "format": "svg",
+      "localPath": "assets/icons/icon-usuario.svg"
+    },
+    {
+      "nodeId": "78:1532",
+      "name": "house",
+      "format": "svg",
+      "localPath": "assets/icons/icon-house.svg"
+    },
+    {
+      "nodeId": "79:1541",
+      "name": "fi-br-arrow-left",
+      "format": "svg",
+      "localPath": "assets/icons/icon-arrow-left.svg"
+    },
+    {
+      "nodeId": "79:1546",
+      "name": "fi-br-arrow-right",
+      "format": "svg",
+      "localPath": "assets/icons/icon-arrow-right.svg"
+    },
+    {
+      "nodeId": "80:1576",
+      "name": "fi-br-angle-small-down",
+      "format": "svg",
+      "localPath": "assets/icons/icon-angle-small-down.svg"
+    },
+    {
+      "nodeId": "80:1579",
+      "name": "fi-br-angle-small-left",
+      "format": "svg",
+      "localPath": "assets/icons/icon-angle-small-left.svg"
+    },
+    {
+      "nodeId": "80:1582",
+      "name": "fi-br-angle-small-right",
+      "format": "svg",
+      "localPath": "assets/icons/icon-angle-small-right.svg"
+    },
+    {
+      "nodeId": "75:1143",
+      "name": "circle-alert",
+      "format": "svg",
+      "localPath": "assets/icons/icon-circle-alert.svg"
+    },
+    {
+      "nodeId": "204:4130",
+      "name": "Indicador de progreso onboarding (Frame 10, personas)",
+      "format": "svg",
+      "localPath": "assets/icons/icon-progreso-personas.svg"
+    },
+    {
+      "nodeId": "204:4650",
+      "name": "fi-br-angle-small-right (instancias tarjetas macros)",
+      "format": "svg",
+      "localPath": "assets/icons/icon-angle-right-macros.svg"
+    },
+    {
+      "nodeId": "168:2331",
+      "name": "Mascota vectorial (Subtract, LOGO 3)",
+      "format": "svg",
+      "localPath": "assets/icons/icon-mascota-vector.svg"
+    },
+    {
+      "nodeId": "96:605",
+      "name": "Anillo de progreso",
+      "format": "svg",
+      "localPath": "assets/icons/icon-anillo-progreso.svg"
+    },
+    {
+      "nodeId": "96:698",
+      "name": "Grafica",
+      "format": "svg",
+      "localPath": "assets/icons/icon-grafica.svg"
+    },
+    {
+      "nodeId": "341:2067",
+      "name": "Botón Regresar (component set)",
+      "format": "svg",
+      "localPath": "assets/icons/component-boton-regresar.svg"
+    }
+  ],
+  "components": [
+    {
+      "nodeId": "484:18085",
+      "name": "Usuario franja (sidebar)",
+      "type": "COMPONENT",
+      "format": "png",
+      "localPath": "assets/components/comp-usuario-franja.png",
+      "size": "245 × 912"
+    },
+    {
+      "nodeId": "608:3105",
+      "name": "Tarjetas semanales",
+      "type": "COMPONENT_SET",
+      "format": "png",
+      "localPath": "assets/components/comp-tarjetas-semanales.png",
+      "size": "1960 × 952"
+    },
+    {
+      "nodeId": "608:3518",
+      "name": "Tarjetas mensuales",
+      "type": "COMPONENT_SET",
+      "format": "png",
+      "localPath": "assets/components/comp-tarjetas-mensuales.png",
+      "size": "1840 × 952"
+    },
+    {
+      "nodeId": "345:6238",
+      "name": "Recomendaciones tarjetas",
+      "type": "COMPONENT_SET",
+      "format": "png",
+      "localPath": "assets/components/comp-recomendaciones-tarjetas.png",
+      "size": "1476 × 952",
+      "note": "Variantes: Property 1 = RECOMENDACIONES PROTE / GRASAS / CARB; Property 2 = Default / VARIANT 2 / VARIANT 3"
+    },
+    {
+      "nodeId": "54:826",
+      "name": "Tarjeta de producto",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-tarjeta-producto.png",
+      "size": "400 × 206"
+    },
+    {
+      "nodeId": "54:847",
+      "name": "Notificaciones",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-notificaciones.png",
+      "size": "400 × 41"
+    },
+    {
+      "nodeId": "54:816",
+      "name": "Campos (inputs)",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-campos.png",
+      "size": "526 × 322"
+    },
+    {
+      "nodeId": "96:607",
+      "name": "Botón multiopción",
+      "type": "COMPONENT_SET",
+      "format": "png",
+      "localPath": "assets/components/comp-boton-multiopcion.png"
+    },
+    {
+      "nodeId": "257:1811",
+      "name": "Botones proteinas",
+      "type": "COMPONENT_SET",
+      "format": "png",
+      "localPath": "assets/components/comp-botones-proteinas.png"
+    },
+    {
+      "nodeId": "153:1814",
+      "name": "Header",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-header.png",
+      "size": "380 × 108"
+    },
+    {
+      "nodeId": "153:2140",
+      "name": "Barra - (barra de progreso)",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-barra-progreso.png",
+      "size": "348 × 55"
+    },
+    {
+      "nodeId": "68:1132",
+      "name": "Barra de navegación",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/comp-barra-navegacion.png",
+      "size": "100 × 43"
+    },
+    {
+      "nodeId": "74:716",
+      "name": "Design System — componentes (Frame 3, overview)",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/designsystem-componentes.png",
+      "size": "1600 × 2776"
+    },
+    {
+      "nodeId": "54:541",
+      "name": "Design System — paleta y tipografía (Frame 2, overview)",
+      "type": "FRAME",
+      "format": "png",
+      "localPath": "assets/components/designsystem-paleta-typografia.png",
+      "size": "1600 × 2566"
+    }
+  ],
+  "videos": {
+    "extracted": 0,
+    "status": "MISSING / NOT EXTRAIBLE",
+    "detail": "Pantalla 10 (484:17956) expone solo un IMAGE fill estático (imageRef 9e6524e7…), sin videoRef ni posterImageRef. La API REST de Figma no ofrece endpoint de descarga de video. El póster quedó en assets/images/img-loading-poster.png. No se recreó ninguna animación.",
+    "see": "assets/videos/README.md"
+  },
+  "missing": [
+    {
+      "item": "Video de carga original (Pantalla 10)",
+      "nodeId": "484:17956",
+      "reason": "La API REST expone solo el póster (IMAGE fill); el archivo de video no es accesible ni descargable. Debe obtenerse manualmente desde el editor de Figma."
+    },
+    {
+      "item": "Código fuente del firmware ESP32",
+      "nodeId": null,
+      "reason": "No forma parte de este proyecto. Sin él no pueden documentarse los mensajes actuales de la serie (documentation/esp32-protocol.md §2). Se solicitará código, volcado de puerto serie o documentación."
+    }
+  ],
+  "prototypeInteractions": {
+    "note": "AUDITORÍA CORREGIDA (fuente primaria = página DISEÑO FINAL, node 204:4114). Aunque actions[].destinationId devuelve null en la REST API (limitación para destinos heredados de componentes), CADA NODO expone la propiedad transitionNodeID con el frame de destino real. Toda la navegación siguiente se leyó nodo por nodo de DISEÑO FINAL y se cruzó con la etiqueta de texto de cada botón. La página 'Árbol de navegación' (6:385) NO se usó como fuente de destinos (puede estar desactualizada). Auditoría completa en documentation/navigation-audit.md.",
+    "flowStartingPoints": [
+      {
+        "name": "Flow 1",
+        "nodeId": "204:4115"
+      }
+    ],
+    "prototypeStartNodeID": "204:4115",
+    "confidenceLabels": {
+      "FIGMA-CONFIRMED": "Verificado en el prototipo de Figma (transitionNodeID / CHANGE_TO / variante).",
+      "USER-CONFIRMED": "Definido explicitamente por el usuario (decisiones 1-16: flujo base 1-8 + ronda actual 9-16 de genero, metas, ESP32, datos y cambio de dia).",
+      "INFERRED": "Interpretación razonada, no verificada (no se presenta como confirmada).",
+      "UNRESOLVED": "Control/comportamiento visible sin transición verificable → requiere aclaración."
+    },
+    "confidenceCounts": {
+      "total": 49,
+      "figmaConfirmed": 47,
+      "userConfirmed": 2,
+      "unknown": 0,
+      "labelInferredRows": [],
+      "note": "Las 2 filas que eran 'unknown' (P3 atras, P10 auto-avance) son ahora USER-CONFIRMED (dec.1 y dec.2); dec.2 ahora queda COMPLETA: el auto-avance ocurre cuando termina el video original (sin duracion arbitraria). Las etiquetas de tarjeta de P9 (filas 23-24) estan corroboradas por dec.5. La pantalla nueva P3.5 no pertenece a las 49 filas del prototipo: ver navigation-audit.md (filas 50-52)."
+    },
+    "confirmedNavigation": [
+      {
+        "from": "204:4115",
+        "element": "Frame completo",
+        "to": "204:4118",
+        "transition": "DISSOLVE 0.5s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4118",
+        "element": "Crear cuenta (204:4119)",
+        "to": "257:2468",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4118",
+        "element": "Log In (204:4120)",
+        "to": "204:5176",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:5176",
+        "element": "Regresar (204:5182)",
+        "to": "204:4118",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:5176",
+        "element": "Log In (204:5183)",
+        "to": "204:4874",
+        "transition": "DISSOLVE 0.3s",
+        "note": "Usuario recurrente: salta el onboarding 3–10",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "257:2468",
+        "element": "Crear cuenta (257:2474) / Frame",
+        "to": "204:4123",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "257:2468",
+        "element": "Regresar (542:18771)",
+        "to": "204:4118",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4123",
+        "element": "Siguiente (310:2450)",
+        "to": "204:4209",
+        "transition": "DISSOLVE 0.3s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4123",
+        "element": "Atrás «‹»",
+        "to": "257:2468",
+        "confidence": "USER-CONFIRMED",
+        "decision": 1,
+        "note": "Sin transición en el prototipo; destino definido por el usuario = P2.2 CREAR CUENTA (no P2 ni P2.1)."
+      },
+      {
+        "from": "204:4209",
+        "element": "‹ (310:2443)",
+        "to": "204:4123",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4209",
+        "element": "Siguiente (310:2444)",
+        "to": "204:4379",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4379",
+        "element": "‹ (310:2437)",
+        "to": "204:4209",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4379",
+        "element": "Siguiente (310:2438)",
+        "to": "204:4294",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4294",
+        "element": "‹ (310:2431)",
+        "to": "204:4379",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4294",
+        "element": "Siguiente (310:2432)",
+        "to": "204:4464",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4464",
+        "element": "‹ (310:2419)",
+        "to": "204:4294",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4464",
+        "element": "Siguiente (310:2420)",
+        "to": "257:2122",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "257:2122",
+        "element": "‹ (310:2383)",
+        "to": "204:4464",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "257:2122",
+        "element": "Siguiente (310:2384)",
+        "to": "204:4561",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4561",
+        "element": "‹ (204:4656)",
+        "to": "257:2122",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4561",
+        "element": "Tarjeta Auto-generar › (204:4647)",
+        "to": "204:4658",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4561",
+        "element": "Tarjeta Ingresar manual › (204:4649)",
+        "to": "204:4761",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4658",
+        "element": "Guardar perfil nutricional (204:4681)",
+        "to": "484:17956",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4658",
+        "element": "Editar metas sugeridas (204:4680)",
+        "to": "204:4761",
+        "transition": "DISSOLVE 0.3s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4658",
+        "element": "‹ (542:18775)",
+        "to": "204:4561",
+        "transition": "SMART_ANIMATE 0.5s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4761",
+        "element": "Guardar perfil nutricional (204:4763)",
+        "to": "484:17956",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4761",
+        "element": "‹ (542:18780)",
+        "to": "204:4561",
+        "transition": "SMART_ANIMATE 0.5s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "484:17956",
+        "element": "(auto, sin botón)",
+        "to": "204:4874",
+        "confidence": "USER-CONFIRMED",
+        "decision": 2,
+        "pending": "duration",
+        "note": "Auto-avance sin botón definido por el usuario. 0 interacciones en el prototipo; la duración queda PENDIENTE (no inventada). Sin recrear el vídeo."
+      },
+      {
+        "from": "204:4874",
+        "element": "Historial (204:4875)",
+        "to": "204:4935",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4874",
+        "element": "Recomendaciones › (204:4901)",
+        "to": "345:7234",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4874",
+        "element": "Icono usuario (I204:4902;131:951)",
+        "to": "484:18085",
+        "navigation": "OVERLAY",
+        "transition": "MOVE_IN LEFT 0.3s",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4935",
+        "element": "‹ (393:3583)",
+        "to": "204:4874",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4935",
+        "element": "Periodo Semanal (I204:4967;86:624)",
+        "to": "345:9838",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4935",
+        "element": "Periodo Mensual (I204:4967;86:626)",
+        "to": "466:15391",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "204:4935",
+        "element": "Icono usuario (I552:17497;131:951)",
+        "to": "484:18085",
+        "navigation": "OVERLAY",
+        "confidence": "confirmed",
+        "note": "Existe la transición, pero el nodo está visible=false (oculto) en el header → no alcanzable. El icono solo es visible en el Panel."
+      },
+      {
+        "from": "345:9838",
+        "element": "‹ (I…;408:5133)",
+        "to": "204:4874",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "345:9838",
+        "element": "Periodo Día (I…;96:616)",
+        "to": "204:4935",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "345:9838",
+        "element": "Periodo Mensual (I…;96:619)",
+        "to": "466:15391",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "466:15391",
+        "element": "‹ (I…;466:13864)",
+        "to": "204:4874",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "466:15391",
+        "element": "Periodo Día (I…;96:632)",
+        "to": "204:4935",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "466:15391",
+        "element": "Periodo Semanal (I…;96:634)",
+        "to": "345:9838",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "345:7234",
+        "element": "‹ (I…;466:17107)",
+        "to": "204:4874",
+        "confidence": "confirmed"
+      },
+      {
+        "from": "484:18085",
+        "element": "Panel completo",
+        "to": "204:4874",
+        "transition": "SLIDE_OUT RIGHT 0.3s",
+        "effect": "Cierra el sidebar",
+        "confidence": "confirmed"
+      }
+    ],
+    "variantOnlyInteractions": [
+      {
+        "screen": "204:4464 / 257:2122",
+        "control": "Opciones de ejercicio (Frame 70-73)",
+        "navigation": "CHANGE_TO",
+        "destinations": [
+          "391:10136",
+          "391:10145",
+          "391:10154",
+          "391:10163"
+        ],
+        "effect": "Selección de intensidad/tipo de ejercicio"
+      },
+      {
+        "screen": "345:9838",
+        "control": "Chips macro",
+        "navigation": "CHANGE_TO",
+        "destinations": [
+          "345:9290",
+          "345:9291",
+          "345:9292"
+        ],
+        "effect": "Selección de chip de macro"
+      },
+      {
+        "screen": "466:15391",
+        "control": "Chips macro",
+        "navigation": "CHANGE_TO",
+        "destinations": [
+          "466:15373",
+          "466:15374",
+          "466:15375"
+        ],
+        "effect": "Selección de chip de macro"
+      },
+      {
+        "screen": "345:7234",
+        "control": "Tabs categoría (Proteínas/Carbs/Grasas)",
+        "navigation": "CHANGE_TO",
+        "destinations": [
+          "345:6235",
+          "345:6236"
+        ],
+        "effect": "Cambio de categoría de recomendaciones"
+      }
+    ],
+    "selectedPeriodMechanism": {
+      "source": "FIGMA-CONFIRMED",
+      "description": "En Historial, el periodo activo se indica con un control segmentado Día|Semanal|Mensual donde el segmento actual va rellenado navy con texto blanco.",
+      "figmaComponent": "Botón multiopción (set 96:607), variante Property 1",
+      "variants": [
+        {
+          "screen": "204:4935",
+          "property1": "Default",
+          "selectedPeriod": "Día"
+        },
+        {
+          "screen": "345:9838",
+          "property1": "Variant2",
+          "selectedPeriod": "Semanal"
+        },
+        {
+          "screen": "466:15391",
+          "property1": "Variant3",
+          "selectedPeriod": "Mensual"
+        }
+      ],
+      "rule": "La opción del periodo actual NO tiene transición (es la activa); las otras dos navegan a sus pantallas.",
+      "chips": "En los filtros por macro, el primer chip va relleno (seleccionado por defecto): 'Todas' (semana) y 'Kcal' (mes)."
+    },
+    "userDecisions": [
+      {
+        "decision": 1,
+        "screen": "204:4123",
+        "topic": "P3 botón atrás",
+        "resolution": "→ 257:2468 (P2.2 CREAR CUENTA); no a P2 ni P2.1"
+      },
+      {
+        "decision": 2,
+        "screen": "484:17956",
+        "topic": "P10 carga",
+        "resolution": "Auto-avance sin botón → 204:4874 (P11), producido cuando TERMINA el vídeo original (sin duración arbitraria); sin recrear el vídeo (falta descargarlo)"
+      },
+      {
+        "decision": 3,
+        "screen": "345:7234",
+        "topic": "Alcance Recomendaciones",
+        "resolution": "Solo la pantalla scrollable existente; sin pantallas de detalle/registrar consumo inventadas"
+      },
+      {
+        "decision": 4,
+        "screen": "204:4874 / historial",
+        "topic": "Historial",
+        "resolution": "'Historial'→día 204:4935; selector Día/Semana/Mes entre 204:4935/345:9838/466:15391; '‹'→Panel; 264:4687 EXCLUIDA; sin selector mes/año"
+      },
+      {
+        "decision": 5,
+        "screen": "204:4561",
+        "topic": "P9 rutas macros",
+        "resolution": "Auto generar→9.1 (204:4658); Ingresar manual→9.2 (204:4761); no intercambiar"
+      },
+      {
+        "decision": 6,
+        "screen": "204:4658",
+        "topic": "P9.1",
+        "resolution": "Editar metas sugeridas→9.2 (204:4761); '‹'→P9 (204:4561); sin botón 'Reiniciar'"
+      },
+      {
+        "decision": 7,
+        "screen": "204:4761",
+        "topic": "P9.2",
+        "resolution": "Una sola pantalla (sin duplicar); desde 9.1 conservar sugeridos, desde 9 no asumirlos; 'Guardar'→P10; valores/validación PENDIENTES"
+      },
+      {
+        "decision": 8,
+        "screen": "204:5176",
+        "topic": "Login",
+        "resolution": "Tras auth correcta→Panel 204:4874; no repetir onboarding si perfil completo; clic≠auth exitosa (requisitos PENDIENTES)"
+      },
+      {
+        "decision": 9,
+        "screen": "(sin nodeId — pantalla nueva)",
+        "topic": "Pantalla 3.5 GÉNERO",
+        "resolution": "Nueva pantalla entre P3 y P4. Dos opciones Masculino/Femenino, selección única y obligatoria. '‹'→204:4123 (P3); 'Siguiente'→204:4209 (P4). Diseño basado en los componentes de selección de P7 (204:4464) / P8 (257:2122). Etiqueta provisional: P3.5. No existe en Figma; se documenta, no se implementa en esta fase."
+      },
+      {
+        "decision": 10,
+        "screen": "204:4209",
+        "topic": "P4 botón atrás",
+        "resolution": "→ P3.5 GÉNERO (Figma decía 204:4123 / P3) — consecuencia de la inserción; A CONFIRMAR."
+      },
+      {
+        "decision": 11,
+        "screen": "204:4561 / 204:4658",
+        "topic": "Alcance de las metas",
+        "resolution": "Metas orientadas al MANTENIMIENTO del peso y alimentación equilibrada (no adelgazar ni aumentar). 15-17 años → solo 'Ingresar manual' (P9.2); ruta 'Auto generar' no disponible. Tras guardar, sin recálculo automático; edición posterior fuera de alcance. Metodología de cálculo → PENDIENTE de investigación y aprobación."
+      },
+      {
+        "decision": 12,
+        "screen": "(presentación)",
+        "topic": "Plataforma",
+        "resolution": "App web de escritorio conservando el diseño móvil de Figma centrado; no se rediseñan pantallas."
+      },
+      {
+        "decision": 13,
+        "screen": "(ESP32)",
+        "topic": "Comunicación serie",
+        "resolution": "USB Serial 115200 baud, JSON delimitado por líneas, Web Serial; autorización inicial del puerto, reconexión automática, sincronización automática y silenciosa (errores solo si el usuario debe intervenir)."
+      },
+      {
+        "decision": 14,
+        "screen": "(datos/historial)",
+        "topic": "Modelo de datos",
+        "resolution": "El ESP32 registra los alimentos (sin registro manual en la app). Se guardan TOTALES ACUMULADOS de prot/carb/grasa (no cada alimento). kcal = 4/4/9. Historial día/semana/mes por cuenta en localStorage, sin backend ni nube. Sin duplicar al re-recibir el mismo total; cambio de cuenta → continúa con la cuenta activa. Conservar lo ya sincronizado si se desconecta."
+      },
+      {
+        "decision": 15,
+        "screen": "(cambio de día)",
+        "topic": "Persistencia y cambio de día",
+        "resolution": "El ESP32 conserva acumulados al apagar (requiere firmware). La fecha la aporta la computadora. Secuencia: recuperar → guardar en el historial de la fecha → verificar guardado → pedir reinicio → confirmar. No reiniciar si falla el guardado. Sin selección manual de fechas; sincronización diaria."
+      },
+      {
+        "decision": 16,
+        "screen": "(firmware ESP32)",
+        "topic": "Alcance de firmware",
+        "resolution": "PENDIENTE de autorización separada: persistencia de acumulados y que START mantenido no borre acumulados. No se modifica firmware en esta fase. Análisis: documentation/esp32-protocol.md."
+      }
+    ],
+    "unresolvedControls": [
+      {
+        "id": 1,
+        "screen": "204:4935 / 345:9838 / 466:15391",
+        "control": "Stepper Frame 18 (‹ + título del periodo + ›)",
+        "nodeIds": [
+          "211:1294",
+          "211:1299",
+          "…256:2477",
+          "…256:2479",
+          "…466:13867",
+          "…466:13869"
+        ],
+        "status": "USER-CONFIRMED (resuelto)",
+        "question": "RESUELTO: las flechas navegan cronologicamente (dia/semana/mes anterior-siguiente). Actualizan periodo y datos; sin periodos futuros; conservan la vista seleccionada. PENDIENTE: limites de rango, dia de inicio de semana y formato de fecha."
+      },
+      {
+        "id": 2,
+        "screen": "466:15391",
+        "control": "Título del stepper (Frame 18) dice 'Últimos 7 días'",
+        "nodeId": "…466:13868",
+        "status": "INCONSISTENCIA-DISEÑO",
+        "question": "La vista mensual muestra 'Últimos 7 días' en vez de un rango de mes (aparente copia de la semanal). Reportado, no corregido (no se modifica Figma)."
+      },
+      {
+        "id": 3,
+        "screen": "345:9838 / 466:15391",
+        "control": "Primer chip de macro ('Todas' / 'Kcal')",
+        "status": "PENDIENTE",
+        "question": "El primer chip (Todas/Kcal) es el seleccionado por defecto y no tiene transicion. PENDIENTE: comportamiento de 'restaurar filtro' al pulsarlo."
+      },
+      {
+        "id": 4,
+        "screen": "466:15391",
+        "control": "Celdas del calendario (Día del mes, 1–31)",
+        "status": "USER-CONFIRMED (resuelto)",
+        "question": "RESUELTO: celdas solo visuales, no clicables, sin detalle diario ni pop-ups; representan el mes mostrado y conservan el diseno de Figma. PENDIENTE: umbrales de color y mapeo de datos del heatmap."
+      },
+      {
+        "id": 5,
+        "screen": "204:5176",
+        "control": "Autenticación del login",
+        "status": "PARCIALMENTE RESUELTO",
+        "question": "RESUELTO: autenticacion simulada local con localStorage (validas -> acceso, invalidas -> sin acceso; perfil completo -> P11, incompleto -> reanuda onboarding). PENDIENTE: mecanismo exacto de verificacion de credenciales, cuentas locales duplicadas y paso exacto de reanudacion."
+      },
+      {
+        "id": 6,
+        "screen": "484:17956",
+        "control": "Auto-avance de la pantalla de carga (P10)",
+        "status": "PARCIALMENTE RESUELTO",
+        "question": "RESUELTO: el auto-avance se produce cuando TERMINA el video original (sin duracion arbitraria). PENDIENTE: el archivo de video no es extraible via API y falta descargarlo desde Figma."
+      },
+      {
+        "id": 7,
+        "screen": "204:4761",
+        "control": "P9.2 valores/edición/validación",
+        "status": "PARCIALMENTE RESUELTO",
+        "question": "RESUELTO: valores iniciales (desde P9 -> 0; desde P9.1 -> conserva sugeridos); validacion: los 3 macros deben ser > 0 para guardar (sin negativos, no numericos ni vacios; 'Guardar' no avanza con valores invalidos); calorias en vivo kcal = prot*4 + carb*4 + grasa*9 (sin campo de kcal independiente). PENDIENTE: valores maximos de macro, precision decimal y presentacion visual del campo invalido/estado de error (no hay UI de error disenada)."
+      },
+      {
+        "id": 8,
+        "screen": "P3.5 (sin nodeId) / 204:4209",
+        "control": "Pantalla nueva P3.5 (GÉNERO) y '‹' de P4",
+        "status": "PENDIENTE",
+        "question": "RESUELTO: requisito y flujo (P3→P3.5→P4, opción única obligatoria, base visual = componentes de P7/P8). PENDIENTE: diseño visual final aprobado de P3.5 y confirmación de que el '‹' de P4 apunte a P3.5 (hoy Figma dice 204:4123 / P3)."
+      },
+      {
+        "id": 9,
+        "screen": "(ESP32)",
+        "control": "Protocolo USB de datos",
+        "status": "PENDIENTE",
+        "question": "PENDIENTE: los mensajes ACTUALES del firmware no estan documentados (el firmware no esta en el proyecto). No se afirman campos ni comandos sin verificar el codigo. Ver documentation/esp32-protocol.md (sec. 2 y 4)."
+      }
+    ],
+    "correctionsFromV1": [
+      "NO existe barra de navegación inferior en ninguna pantalla activa. El componente 'Barra de navegación' (68:1132) y el icono 'house' (78:1532) son assets del Design System no colocados en DISEÑO FINAL.",
+      "El Panel usa 4 barras de progreso onduladas 'Barra -' (153:2140), NO anillos de progreso.",
+      "El icono de usuario del header solo está visible en el Panel (abre el sidebar); en historial y recomendaciones está visible=false (oculto)."
+    ],
+    "functionalSpecs": {
+      "source": "USER-CONFIRMED (especificaciones del usuario); comportamiento visual de Figma conservado",
+      "numericWheels": {
+        "appliesTo": [
+          "204:4209",
+          "204:4379",
+          "204:4294"
+        ],
+        "type": "rueda numerica con scroll vertical (no campo de texto)",
+        "rules": [
+          "Valor centrado = seleccionado, resaltado visualmente segun Figma",
+          "La rueda se detiene en el minimo y el maximo",
+          "El valor se almacena en los datos de onboarding",
+          "Sin campo estandar, sin entrada por teclado, sin decimales",
+          "Conservar layout, espaciado, tipografia y jerarquia visual original de Figma"
+        ],
+        "ranges": [
+          {
+            "screen": "204:4209",
+            "field": "edad",
+            "min": 15,
+            "max": 100,
+            "step": 1,
+            "unit": "anos",
+            "integersOnly": true
+          },
+          {
+            "screen": "204:4379",
+            "field": "estatura",
+            "min": 100,
+            "max": 230,
+            "step": 1,
+            "unit": "cm",
+            "integersOnly": true
+          },
+          {
+            "screen": "204:4294",
+            "field": "peso",
+            "min": 30,
+            "max": 300,
+            "step": 1,
+            "unit": "kg",
+            "integersOnly": true
+          }
+        ]
+      },
+      "macroEntryScreen92": {
+        "screen": "204:4761",
+        "sameScreenForBothPaths": true,
+        "initialValues": {
+          "fromScreen9": {
+            "protein_g": 0,
+            "carbohydrates_g": 0,
+            "fat_g": 0,
+            "kcal": 0
+          },
+          "fromScreen91": "conserva los valores sugeridos de proteina/carbohidratos/grasas y permite editarlos"
+        },
+        "validation": {
+          "rule": "Guardar solo procede a 484:17956 cuando los TRES macros son > 0",
+          "requirements": [
+            "protein > 0 g",
+            "carbohydrates > 0 g",
+            "fat > 0 g"
+          ],
+          "rejects": [
+            "valores negativos",
+            "valores no numericos",
+            "campos vacios"
+          ],
+          "noErrorScreenInvented": true,
+          "pending": [
+            "valores maximos de macro",
+            "precision decimal",
+            "presentacion visual del campo invalido / estado de error"
+          ]
+        },
+        "liveCalorieCalculation": {
+          "formula": "kcal = (protein_g * 4) + (carbohydrates_g * 4) + (fat_g * 9)",
+          "factors": {
+            "protein_kcal_per_g": 4,
+            "carbohydrates_kcal_per_g": 4,
+            "fat_kcal_per_g": 9
+          },
+          "recalculatesOnChange": true,
+          "noIndependentCalorieInput": true
+        }
+      },
+      "simulatedLocalAuth": {
+        "noRealServerOrProvider": true,
+        "storage": "localStorage (datos de demostracion no sensibles)",
+        "accountCreation": {
+          "screen": "257:2468",
+          "creates": "cuenta de demostracion local",
+          "associates": "datos del onboarding",
+          "persists": "cuenta y perfil entre sesiones del navegador",
+          "storesOnboardingCompletionStatus": true
+        },
+        "login": {
+          "screen": "204:5176",
+          "validCredentials": "permite acceso",
+          "invalidCredentials": "no permite acceso",
+          "clickIsNotAutoSuccess": true,
+          "completedProfile": "204:4874 (Panel, sin repetir onboarding)",
+          "incompleteProfile": "reanuda el onboarding no terminado"
+        },
+        "localStorageKeys": [
+          "accountId",
+          "profile",
+          "gender",
+          "onboardingProgress",
+          "age",
+          "height",
+          "weight",
+          "exerciseFrequency",
+          "exerciseType",
+          "macroGoals",
+          "historyDataPerAccount"
+        ],
+        "securityRestrictions": [
+          "solo demostracion; no autenticacion de grado produccion",
+          "no guardar contrasenas reales ni credenciales sensibles en localStorage",
+          "no crear pantallas de autenticacion fuera de DISENO FINAL"
+        ],
+        "pending": [
+          "mecanismo exacto de verificación simulada de credenciales",
+          "cuentas locales duplicadas",
+          "paso exacto de reanudación de onboarding incompleto (ahora incluye P3.5)"
+        ],
+        "localStorageKeysNote": "El historial se guarda separado por cuenta (ver dataHistoryModel)."
+      },
+      "historyPeriodArrows": {
+        "appliesTo": [
+          "204:4935",
+          "345:9838",
+          "466:15391"
+        ],
+        "behavior": "las flechas navegan cronologicamente: dia/semana/mes anterior-siguiente",
+        "requirements": [
+          "actualizar el periodo mostrado y los datos de historial",
+          "no permitir navegar a periodos futuros",
+          "conservar la vista de historial seleccionada al cambiar el rango",
+          "no anadir controles ausentes del Figma original"
+        ],
+        "pending": [
+          "dia de inicio de semana",
+          "formato de fecha",
+          "limites de rango historico"
+        ]
+      },
+      "monthlyCalendarHeatmap": {
+        "screen": "466:15391",
+        "cellsVisualOnly": true,
+        "cellsNotClickable": true,
+        "noDailyDetailScreen": true,
+        "noInteractivePopups": true,
+        "representsCurrentlyDisplayedMonth": true,
+        "preserveFigmaVisualDesign": true,
+        "pending": [
+          "reglas de datos del heatmap",
+          "umbrales de color"
+        ]
+      },
+      "dashboard": {
+        "screen": "204:4874",
+        "noBottomNavigationBar": true,
+        "progressBarsVisualOnly": true,
+        "progressBarsNotEditable": true,
+        "displayedValuesReflectStoredData": true,
+        "noExtraDesignSystemComponents": true
+      },
+      "colorsAndTypography": {
+        "primaryReference": "DISENO FINAL",
+        "preserveActualScreenComponentColors": true,
+        "doNotAutoReplaceWithDSPalette": true,
+        "fontFamily": "Epilogue",
+        "weights": {
+          "titles": "Bold",
+          "subtitles": "Medium",
+          "body": "Light"
+        },
+        "pending": [
+          "tamaños tipográficos exactos (px)"
+        ],
+        "primaryColor": "#173B64",
+        "primaryColorConfirmed": true
+      },
+      "genderScreen": {
+        "label": "P3.5 (etiqueta provisional)",
+        "nodeId": null,
+        "existsInFigma": false,
+        "position": "entre 204:4123 (P3 NOMBRE) y 204:4209 (P4 EDAD)",
+        "source": "USER-CONFIRMED",
+        "options": [
+          "Masculino",
+          "Femenino"
+        ],
+        "selection": {
+          "type": "única",
+          "required": true
+        },
+        "navigation": {
+          "back": "204:4123 (P3 NOMBRE)",
+          "forward": "204:4209 (P4 EDAD)",
+          "inbound": {
+            "204:4123 Siguiente (310:2450)": "P3.5 — reorientado por la inserción (dec.9)"
+          },
+          "affectedExistingTransitions": [
+            "fila 8 — Siguiente de P3 ya no va directo a P4 (dec.9)",
+            "fila 10 — «‹» de P4 pasa a P3.5 en vez de P3 (dec.10, A CONFIRMAR)"
+          ]
+        },
+        "visualReference": "componentes de selección única de P7 (204:4464) y P8 (257:2122)",
+        "storedIn": "perfil local (localStorage)",
+        "status": "documentada; no construida en esta fase",
+        "pending": [
+          "diseño visual final aprobado",
+          "confirmar que el '‹' de P4 (310:2443) apunte a P3.5 en vez de 204:4123"
+        ]
+      },
+      "presentation": {
+        "source": "USER-CONFIRMED",
+        "form": "aplicación web de escritorio",
+        "layout": "diseño móvil de Figma (420x912) conservado y centrado en pantalla de escritorio",
+        "redesignForDesktop": false,
+        "responsive": false
+      },
+      "goalsScope": {
+        "source": "USER-CONFIRMED",
+        "objective": "mantenimiento del peso y alimentación equilibrada",
+        "notFor": [
+          "adelgazar",
+          "aumentar de peso"
+        ],
+        "inputs": [
+          "nombre",
+          "género (P3.5)",
+          "edad",
+          "estatura",
+          "peso",
+          "frecuencia de ejercicio",
+          "tipo de ejercicio"
+        ],
+        "ageRestriction": {
+          "range": "15-17 años",
+          "allowedRoute": "9.2 (204:4761) — Ingresar manual",
+          "blockedRoute": "9.1 (204:4658) — Auto generar",
+          "presentation": "PENDIENTE"
+        },
+        "afterSaving": {
+          "autoRecalculation": false,
+          "laterEditing": "fuera de alcance"
+        },
+        "calculationMethodology": "PENDIENTE de investigación y aprobación (no se inventa la fórmula)",
+        "registrationDataFrom": [
+          "204:4123 nombre",
+          "P3.5 género",
+          "204:4209 edad",
+          "204:4379 estatura",
+          "204:4294 peso",
+          "204:4464 frecuencia de ejercicio",
+          "257:2122 tipo de ejercicio"
+        ]
+      },
+      "loadingScreen": {
+        "screen": "484:17956",
+        "source": "USER-CONFIRMED",
+        "asset": "video original de Figma",
+        "autoAdvanceTo": "204:4874",
+        "trigger": "evento de fin del vídeo",
+        "fixedDurationSeconds": null,
+        "arbitraryDuration": false,
+        "videoAvailable": false,
+        "pending": [
+          "descargar el vídeo original manualmente desde Figma (no extraíble vía REST API)"
+        ]
+      },
+      "esp32Serial": {
+        "source": "USER-CONFIRMED",
+        "transport": "USB Serial",
+        "baudRate": 115200,
+        "messageFormat": "JSON delimitado por líneas",
+        "api": "Web Serial",
+        "environment": "navegador de escritorio compatible (Chrome/Edge/Opera) en contexto seguro (localhost/HTTPS)",
+        "portAuthorization": "autorización inicial del puerto cuando el navegador la requiera",
+        "autoReconnect": true,
+        "syncMode": "automática y silenciosa",
+        "errorPolicy": "mostrar errores solo cuando el usuario deba intervenir",
+        "foodRegistration": "la realiza el ESP32; la app NO ofrece registro manual de alimentos",
+        "protocolDoc": "documentation/esp32-protocol.md",
+        "currentFirmwareMessages": "DESCONOCIDO — el firmware no está en el proyecto; no se afirman campos ni comandos",
+        "pending": [
+          "obtener el firmware (o volcado serie) para documentar los mensajes actuales",
+          "verificar que el protocolo real sea JSON por línea a 115200",
+          "reglas de exposición de errores"
+        ]
+      },
+      "dataHistoryModel": {
+        "source": "USER-CONFIRMED",
+        "granularity": "totales acumulados de proteínas, carbohidratos y grasas (NO alimento individual)",
+        "calorieFormula": "kcal = (prot * 4) + (carb * 4) + (grasa * 9)",
+        "views": [
+          "día",
+          "semana",
+          "mes"
+        ],
+        "storage": "localStorage, separado por cuenta",
+        "backend": false,
+        "cloudSync": false,
+        "accountRules": {
+          "newDataGoesTo": "cuenta con sesión activa",
+          "onAccountSwitchWithDeviceConnected": "la sincronización continúa con la nueva cuenta",
+          "noDuplicateConsumption": true,
+          "preserveAlreadySyncedDataOnDisconnect": true
+        },
+        "deduplication": {
+          "required": true,
+          "strategy": "PENDIENTE (contador/versión, timestamp, hash o confirmación explícita — sin decidir)"
+        },
+        "pending": [
+          "estrategia de deduplicación",
+          "reglas de cambio de cuenta sin duplicar ni perder datos",
+          "estructura de guardado (un total por día vs sobrescritura)"
+        ]
+      },
+      "dayChangeProtocol": {
+        "source": "USER-CONFIRMED",
+        "devicePersistsAccumulatedOnPowerOff": true,
+        "deviceFirmwareChangeRequired": true,
+        "deviceFirmwareChangeStatus": "PENDIENTE — requiere autorización separada para modificar firmware",
+        "dateProvidedBy": "computadora",
+        "steps": [
+          "1) recuperar los acumulados pendientes del ESP32",
+          "2) guardarlos en el historial local bajo la fecha correspondiente",
+          "3) verificar que el guardado fue exitoso",
+          "4) solicitar al ESP32 reiniciar sus acumulados (solo si la verificación fue exitosa)",
+          "5) confirmar el nuevo estado del dispositivo"
+        ],
+        "doNotResetOnSaveFailure": true,
+        "prototypeAssumption": "sincronización diaria; sin almacenamiento de varios días en el ESP32 ni selección manual de fechas",
+        "startButtonLongPressMustNotClear": true,
+        "startButtonChangeStatus": "PENDIENTE de firmware",
+        "pending": [
+          "mensajes concretos de los pasos 1, 4 y 5 (dependen del firmware actual)"
+        ]
+      }
+    },
+    "pendingFunctionalDecisions": [
+      {
+        "id": 1,
+        "topic": "Autenticacion simulada",
+        "question": "Mecanismo exacto de verificacion de credenciales locales (formato de almacenamiento/comparacion). Debe aprobarse antes de codificar."
+      },
+      {
+        "id": 2,
+        "topic": "Cuentas locales",
+        "question": "Comportamiento ante cuentas duplicadas (mismo email/usuario en localStorage)."
+      },
+      {
+        "id": 3,
+        "topic": "Onboarding",
+        "question": "Como y desde que paso exacto se reanuda un perfil incompleto."
+      },
+      {
+        "id": 4,
+        "topic": "P9.2 macros",
+        "question": "Valores maximos de macro y precision decimal de los campos."
+      },
+      {
+        "id": 5,
+        "topic": "P9.2 macros",
+        "question": "Presentacion visual del campo invalido / estado de error (no hay UI de error disenada; no se inventa)."
+      },
+      {
+        "id": 6,
+        "topic": "Historial",
+        "question": "Dia de inicio de semana, formato de fecha y limites de rango para las flechas anterior/siguiente."
+      },
+      {
+        "id": 7,
+        "topic": "Historial mes",
+        "question": "Umbrales de color y mapeo de datos del heatmap del calendario."
+      },
+      {
+        "id": 8,
+        "topic": "Metas sugeridas (P9.1)",
+        "question": "Metodología de cálculo de metas de MANTENIMIENTO — pendiente de investigación y aprobación."
+      },
+      {
+        "id": 9,
+        "topic": "Pantalla 10 (carga)",
+        "question": "Video de carga original (falta descargarlo desde Figma). La duración ya NO está pendiente: es la del vídeo."
+      },
+      {
+        "id": 10,
+        "topic": "Historial chips",
+        "question": "Comportamiento de 'restaurar filtro' del chip seleccionado por defecto (Todas/Kcal)."
+      },
+      {
+        "id": 11,
+        "topic": "Tokens",
+        "question": "RESUELTO navy (color principal = #173B64). PENDIENTE: tamaños tipográficos exactos (px)."
+      },
+      {
+        "id": 12,
+        "topic": "Pantalla P3.5 (GÉNERO)",
+        "question": "Diseño visual final de la pantalla nueva (base = componentes de P7/P8) y confirmación del '‹' de P4 → P3.5."
+      },
+      {
+        "id": 13,
+        "topic": "ESP32 · protocolo",
+        "question": "Mensajes ACTUALES del firmware (fuente no disponible en el proyecto) y aprobación de modificaciones propuestas (P1–P5). No inventar campos. Ver documentation/esp32-protocol.md."
+      },
+      {
+        "id": 14,
+        "topic": "ESP32 · deduplicación",
+        "question": "Cómo detectar totales repetidos y evitar duplicar consumos (contador/timestamp/hash/confirmación) — sin decidir."
+      },
+      {
+        "id": 15,
+        "topic": "ESP32 · cambio de cuenta",
+        "question": "Reglas de reasignación de la sincronización al cambiar de cuenta con el dispositivo conectado, sin duplicar ni perder datos."
+      },
+      {
+        "id": 16,
+        "topic": "ESP32 · cambio de día",
+        "question": "Detección del nuevo día y mensajes de la secuencia guardar→verificar→pedir reinicio→confirmar."
+      },
+      {
+        "id": 17,
+        "topic": "ESP32 · errores",
+        "question": "Qué errores de comunicación se muestran al usuario y cuáles quedan en silencio."
+      },
+      {
+        "id": 18,
+        "topic": "P9 · restricción 15-17",
+        "question": "Cómo se deshabilita/aporta la opción 'Auto generar' sin crear UI de Figma no diseñada."
+      },
+      {
+        "id": 19,
+        "topic": "Firmware ESP32",
+        "question": "Persistencia de acumulados al apagar y que START mantenido no los borre — FUERA DE ALCANCE, requiere autorización separada."
+      }
+    ]
+  },
+  "navigationTree": {
+    "pageNodeId": "6:385",
+    "status": "SUPLEMENTARIO / NO FUENTE DE DESTINOS",
+    "statusNote": "Revisado en la auditoría (documentation/navigation-audit.md). Puede contener flujos desactualizados. Los destinos definitivos provienen de DISEÑO FINAL (transitionNodeID). Contradiciones detectadas (C1–C5) y RESUELTAS por las decisiones 1–8 del usuario →C1 recomendaciones (pantallas intermedias inexistentes), C2 historial mensual (selector mes/año inexistente), C3 botón literal 'reiniciar' inexistente, C4 login salta el onboarding (coherente), C5 264:4687 huérfana → EXCLUIDA.",
+    "stories": [
+      {
+        "story": "Nutripocket",
+        "flow": "Inicio · Panel principal"
+      },
+      {
+        "story": "Mi perfil nutricional (HU1)",
+        "flow": "Opción A automática (generar según datos) / Opción B manual (definir macros) → Ingresar datos (edad, peso, estatura, ejercicio) → Ingresar metas (proteína, carbohidratos, grasas) → Metas sugeridas (¿Aceptas? Sí: guardar perfil / No: reiniciar) → Guardar perfil → Metas en el panel principal"
+      },
+      {
+        "story": "Recomendaciones (HU2)",
+        "flow": "Pop-up de aviso (notificación en Inicio) → Sección Recomendaciones (entrada desde Inicio) → Conocer más (comidas sugeridas) → Snack rápido (poco tiempo) / Comida completa (siguiente comida) → Lista de snacks / Lista de comidas → Detalle (¿Te interesa?) → Registrar consumo (regresa a Inicio)"
+      },
+      {
+        "story": "Historial (HU3)",
+        "flow": "Día (gráfica consumo vs meta) → Semanal / Mensual (¿Qué periodo consultar?) → Últimos 7 días (gráfica semanal) / Resumen mensual (tendencias y cumplimiento) → Seleccionar mes y año → Gráficas del mes (fin del flujo)"
+      }
+    ]
+  },
+  "documentation": {
+    "status": "solo documentación; sin código de aplicación",
+    "files": [
+      {
+        "path": "documentation/implementation-manual.md",
+        "role": "manual pantalla por pantalla (21 secciones)"
+      },
+      {
+        "path": "documentation/navigation-audit.md",
+        "role": "auditoría de navegación (49 filas + 3 nuevas fuera de Figma)"
+      },
+      {
+        "path": "documentation/esp32-protocol.md",
+        "role": "análisis de requisitos de comunicación USB (confirmado vs pendiente)"
+      },
+      {
+        "path": "assets/inventory.json",
+        "role": "inventario de assets y especificaciones funcionales (este archivo)"
+      },
+      {
+        "path": "preview/gallery.html",
+        "role": "galería visual de las 20 pantallas"
+      }
+    ],
+    "notImplemented": [
+      "React / componentes",
+      "navegación funcional",
+      "firmware ESP32",
+      "backend"
+    ]
+  }
+}
